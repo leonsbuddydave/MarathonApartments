@@ -1,0 +1,40 @@
+.sidebar {
+  width: 300px;
+  background: darken(#fafafa, 10%);
+  margin-left: 2em;
+  display: none;
+
+  @include min-screen($tablet-break) {
+    display: block;
+  }
+}
+
+.sidebar-section-header {
+  background: darken(#fafafa, 30%);
+  padding: 1em;
+  color: #fff;
+  margin-bottom: .5em;
+
+  &:not(:first-of-type) {
+    margin-top: 2em;
+  }
+}
+
+.sidebar-section-entry {
+  display: flex;
+  padding: .5em;
+
+  .section-icon {
+    float: left;
+    font-size: 2em;
+  }
+
+  .section-info {
+    float: left;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    padding: 0 .5em;
+    line-height: 1.5em;
+  }
+}

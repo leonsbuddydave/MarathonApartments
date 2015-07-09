@@ -1,0 +1,77 @@
+.listings {
+  flex: 1;
+}
+
+.listing {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #dedede;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, .3);
+}
+
+.listing-hero {
+  background-image: url('/images/default-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.listing-details {
+  padding: 1em;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  color: #555;
+
+  .left, .right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    flex-shrink: 0;
+  }
+
+  .left {
+    flex-grow: 2;
+  }
+
+  .right {
+    flex-grow: 1;
+    align-items: flex-end;
+  }
+
+  .address {
+    font-size: 2em;
+  }
+
+  .bed-and-bath {
+    font-size: 1.2em;
+  }
+
+  .rent {
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+
+  .available-date {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+}
+
+.listing-expanded-details {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  padding-top: 1em;
+
+  border-top: 1px solid #dedede;
+  color: #999;
+
+  .detail {
+    display: inline;
+    flex-basis: auto;
+    flex-shrink: 0;
+    text-align: center;
+  }
+}
